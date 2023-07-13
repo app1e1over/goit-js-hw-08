@@ -31,5 +31,6 @@ form.querySelector("[type=submit]").addEventListener("click",(e)=>{
         obj[el.name] = el.value;
         el.value = "";
     })
+    localStorage.setItem("feedback-form-state", "");
     console.log(obj);
 })
